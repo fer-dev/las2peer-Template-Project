@@ -25,14 +25,14 @@ import i5.las2peer.security.UserAgentImpl;
 import i5.las2peer.testing.MockAgentFactory;
 
 public class request {
-//1. Crear objeto socket
-//2. definir string ip o direccion url
-//3. definir entero puerto
-//4. se define el camino a la plantilla para editar propiedades de cliente
-//5. se define un metodo para conectar el cliente con los nodos de la red
+//1. Create socket object
+//2. define ip address as a string
+//3. define int number as port
+//4. setup and config template with the client properties
+//5. connect all nodes from the network
 Socket ObjectSocket;
 private static final string HTTP_ADDRESS="www.jasper-domain.net";
-private static final int PORT=25078 //redefinir en linea 52 poco probable
+private static final int PORT=25078 
 private static final string mainPath = "template/"
 private static  ByteArrayOutStream logStream;
 private static UserAgentImpl clientAgent;
@@ -42,7 +42,7 @@ private static final String clientPass="jasper_password"
 request(){}
 void run
   {
-         //1.El objeto socket hace conexion la url o ip y al puerto.
+         //1.connection.
          try {
          ObjectSocket= new Socket(HTTP_ADDR, PORT);
          System.out.println("Connected to database | JASPER NETWORK");
